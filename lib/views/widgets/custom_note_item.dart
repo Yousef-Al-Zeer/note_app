@@ -49,7 +49,9 @@ class NoteItem extends StatelessWidget {
               ),
               trailing: IconButton(
                 padding: EdgeInsets.only(bottom: 50),
-                onPressed: () {},
+                onPressed: () {
+                  note.delete();
+                },
                 icon: Icon(
                   FontAwesomeIcons.trash,
                   size: 24,
